@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <!--paso 1) Agregar la directiva de ng-app -->
-<html ng-app>
+<html ng-app = "MyFirstApp">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hola controller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/angular.js"></script>
+    <script src="js/Controller.js"></script>
 </head>
-<body>
-    {{"!!Hola"+" mundo desde ANgular JS!!"}}
+<body ng-controller="FirstController">
+
+    {{"!!Hola biembenido: "+nombre}}
+    
 </body>
 </html>
