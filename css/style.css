@@ -1,0 +1,59 @@
+body{
+    background-color: rgba(83, 80, 80, 0.767);
+}
+h1{
+  text-align: center;
+  margin-top:30px;
+}
+#frmContent{
+    background-color: rgb(54, 49, 49);
+    color: white;
+    width: 40%;
+    height: 350px;
+    margin: 0 auto;
+}
+form{
+    width: 80%;
+    background-color: rgba(19, 19, 19, 0);
+    height: 300px;
+    margin: 0 auto;
+}
+.inpG{
+    width: 97%;
+    margin: 1%;
+    margin-top: 3%;
+}
+#inprd1{
+    margin-top:5px;
+}
+button{
+    width: 100%;
+}
+#btnCont{   
+    margin: 0 auto;
+    background: red;
+    width:20%;
+    margin-top: 30px;
+}
+#resultado{
+    background-color: rgb(54, 49, 49);
+    color: white;
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+
+}
+#resultado div{
+    width: 90%;
+    background-color: rgba(88, 92, 88, 0.836);
+    margin: 0 auto;
+    
+}
+.circular{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /*background-image: url(../img/angular.png)*/
+}

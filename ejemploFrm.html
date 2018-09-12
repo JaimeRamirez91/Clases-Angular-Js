@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="frmApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="frmController">
+     <section id="frmContent">
+         <br>
+           <h1>FORMULARIO DE APERTURA DE CUENTA</h1>
+            <form name="miFormulario" novalidate>
+                        <input type="text" ng-model="nombre" name="nombre" required  placeholder="Nombre" class="inpG">
+                        
+                        <input type="number" ng-model="dui" required placeholder="Dui" class="inpG">
+                        
+                        <input type="number" ng-model="ingresos"  required placeholder="Ingresos" class="inpG">
+                        
+                        <input id="inprd1" type="radio" name="cuenta" value="p" ng-model="Cplanillera"  ng-click="Mostrarplanilla()"> Planilla<br>
+                    
+                        <input  type="radio" name="cuenta" value="c" ng-model="Cahorro"  ng-click="Mostrarahorro()"> Corriente<br>
+                        
+                        <div class="mensaje" ng-show="planilla">
+                                <input type="text"  ng-model="empresaN" placeholder="Datos de la empresa: " class="inpG">
+                        </div>
+
+                        <div class="mensaje" ng-show="ahorro">
+                                <input type="text"  ng-model="dineroC" placeholder="Cantidad" class="inpG">
+                        </div>
+                        <div id="btnCont">
+                            <button  ng-click="transaccion()">finalizar</button>
+                        </div>
+                       
+            </form>
+      </section>
+     <section id="resultado">
+            <div ng-bind-html="datos">
+
+            </div>
+     </section>
+     <section  back-img="./img/angular.png"></section>  
+        
+        <script src="js/controllerfrm.js"></script>
+</body>
+</html>
